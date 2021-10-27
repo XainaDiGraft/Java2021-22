@@ -1,0 +1,40 @@
+Para sincronizar un repositorio existente a una carpeta local (crea una carpeta dentro de la carpeta elegida con el nombre del repositorio):
+
+- En ventana de comandos, hacer git init.
+- git clone https://github.com/usuario/nombreRepositorio
+- Cambiarse a la carpeta creada dentro de la carpeta de ejecución, normalmente coincidente con el nombre del repositorio (cd nombredecarpeta).
+- Ver la rama actual con git branch. Con git branch -a se ven todas (-r sólo las remotas).
+- Para que actualice cada rama al hacer pull, hay que ir haciendo checkout a todas las ramas y comprobar en el mensaje que ha sincronizado la remota.
+- Cuando estén todas, con git pull debería descargar el contenido remoto (no es seguro si solo de la rama activa) sin necesidad de tener que ir definiendo la rama remota (lo que facilita la confusión, podría ser que indicásemos hacer pull en nuestra rama desde otra, aumentando el número y la complejidad de los conflictos, y la dificultad de resolver conflictos de este tipo sin empezar de nuevo.)
+
+
+
+Nos vamos a la carpeta del proyecto y ejecutamos estos comandos.
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
+git push -u origin master
+
+Para sincronizar un repositorio existente a una carpeta local (los archivos se copian directamente a la carpeta elegida sin crear subcarpeta de nombre del repositorio):
+- En ventana de comandos, hacer git init.
+- git remote add origin https://github.com/usuario/nombreRepositorio
+- git fetch origin
+- git checkout main (dirá que ya estás en main, si esa era la rama principal, pero los archivos aparecerán).
+- git pull
+
+
+Alguno me ha pedido ayuda con GIT y he conseguido recuperar unos videos del año pasado donde lo explique, creo que fue en Entornos de Desarrollo pero de DAW. No son master class, son videos de clases presenciales pero os pueden ayudar igualmente. 
+
+Git introducción
+https://youtu.be/hmRY2oGGqMQ (Enlaces a un sitio externo.)
+
+
+Git fundamentos 1 https://youtu.be/bSwtMgbhDuo (Enlaces a un sitio externo.)
+
+Git fundamentos 2 https://youtu.be/mgtCLEARV74 (Enlaces a un sitio externo.)
+
+Git colaborativo https://youtu.be/yopugrCwrds (Enlaces a un sitio externo.)
+
+GitHub
+https://youtu.be/-SQqhB5mcIk (Enlaces a un sitio externo.)
