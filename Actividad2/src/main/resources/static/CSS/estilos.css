@@ -1,0 +1,336 @@
+
+/*Reseteamos los estilos iniciales*/
+*{
+	text-decoration:none;
+  	margin: 0px;
+  	padding: 0px;
+  	list-style: none;
+
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*Dar formato a index.jsp*/
+/* Agregue un color de fondo a la navegación superior*/
+.topnav {
+  background-color: white;
+  display:table;
+  border-width:1px;
+  border-style: solid;
+  border-color:aqua;
+  overflow: hidden;
+}
+.borde{ 
+  margin: 0px;
+  padding: 0px;
+  display:table;
+  float: left;
+  border-width:thin;
+  border-style: solid;
+  border-color:aqua;
+}
+
+/* Aplicar estilo a los enlaces dentro de la barra de navegación */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+/* Cambiar el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+  background-color: aqua;
+  color: black;
+}
+/* Agrega un color al enlace activo/actual */
+.topnav a.active {
+  background-color: aqua;
+  color: black;
+  font-weight:bold;
+}
+/*Dar formato a la tabla que lista los objetos*/
+.listado{
+	margin:3px;
+	border-collapse: collapse;
+	
+}
+.cabecera{
+	background-color: gray;
+ 	color: white;
+ 	font-weight:bold;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	
+}
+.cabecera th{
+	border-width:thin;
+ 	border-style: solid;
+ 	border-color:gray;
+}
+
+.ele{
+	padding:5px;
+	color:#8080ff;
+	border-width:thin;
+ 	border-style: solid;
+ 	border-color:gray;
+}
+.editar{
+	padding:5px;
+	border-width:thin;
+ 	border-style: solid;
+ 	border-color:aqua;
+}
+.editar a{
+	color:black;
+}
+.eliminar{
+	padding:5px;
+	border-width:thin;
+ 	border-style: solid;
+ 	border-color:aqua;
+}
+.eliminar a{
+	color:orange;
+}
+.cancelar{
+	padding:5px;
+	border-width:thin;
+ 	border-style: solid;
+ 	border-color:aqua;
+}
+.cancelar a{
+	color:red;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: aqua;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*Dar formato a editarEvento.jsp*/
+/*Dar formato a la tabla que edita los eventos*/
+.evento{
+	border-collapse: collapse;
+}
+.cabecera2{
+text-align: left;
+color:white;
+background-color: grey;
+border-width:medium;
+border-style: solid;
+border-color:black;
+}
+.ele2{
+	
+	border-width:medium;
+	border-style: solid;
+	border-color:black;
+}
+/*----------------------------------------------------------------------------------------------------------*/
+/*Dar formato a altaEvento.jsp*/
+/*Dar formato al formulario que da de alta los eventos*/
+.tituloAlta{
+	text-align: center;
+}
+
+form{
+	width:90%;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+.padre {
+	
+	margin: 0px;
+  	padding: 0px;
+	display: flex;
+	height:100%;
+	align-items: center;
+	
+}
+.hijo {
+	margin: 0px;
+  	padding: 0px;
+  	height:100%;
+   	display:flex;
+   	flex-direction:row;
+   	align-items: center;
+   	justify-content: space-between;
+}
+form label{
+	font-weight:bold;
+	display:inline-block;
+}
+fieldset{
+	
+	padding-left:10px;
+	padding-right:10px;
+ 	border:2px solid #f6f6f6;
+	border-radius:3px;
+	margin-left:2%
+}
+.estado{
+	width:30%;
+	display:inline-flex;
+	flex-direction:column;
+	align-items:flex-end;
+	overflow:hidden;
+}
+fieldset legend{
+	font-weight:bold;
+}
+
+form .nombre{
+	width:35%;
+	padding:3px 8px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form .direccion{
+	width:80%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+form .numero {
+	width:8%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form input[type="date"] {
+	width:12%;
+	padding:3px 10px;
+	border:1px solid gr#f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form .tipo {
+	width:10%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+.destacado{
+	width:8%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form .precio{
+	width:10%;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	background-color:#000;
+} 
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
