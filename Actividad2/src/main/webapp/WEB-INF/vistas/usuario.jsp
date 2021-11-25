@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +50,7 @@
 		</tr>
 		<tr>
 			<th class="cabecera2">Fecha de registro</th>
-			<td class="ele2">${usuario.fechaRegistro}</td>
+			<td class="ele2"><fmt:formatDate pattern = "dd-MM-yyyy" value = "${usuario.fechaRegistro}" /></td>
 		</tr>
 	</table>
 	<div class="topnav"><a href="/inicio">Volver</a>

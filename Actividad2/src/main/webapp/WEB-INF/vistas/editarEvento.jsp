@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +43,7 @@
 			</tr>
 			<tr>
 				<th class="cabecera2">FECHA INICIO</th>
-				<td class="ele2">${evento.fechaInicio}</td>
+				<td class="ele2"><fmt:formatDate pattern = "dd-MM-yyyy" value = "${evento.fechaInicio}" /></td>
 			</tr>
 			<tr>
 				<th class="cabecera2">DURACION</th>
@@ -58,7 +59,7 @@
 			</tr>
 			<tr>
 				<th class="cabecera2">PRECIO</th>
-				<td class="ele2">${evento.precio}</td>
+				<td class="ele2">${evento.precio} â‚¬</td>
 			</tr>
 			<tr>
 				<td class="ele2">Quedan: ${plazasLib} plazas</td>
@@ -80,7 +81,7 @@
 				<img alt="Despedida de Soltero" src="/img/DespedidaSoltero.png">
 			</c:when>
 			<c:when test="${evento.tipo.idTipo == '3'}">
-				<img alt="Cumpleaños" src="/img/cumpleaños.png">
+				<img alt="CumpleaÃ±os" src="/img/cumpleaÃ±os.png">
 			</c:when>
 			<c:when test="${evento.tipo.idTipo == '4'}">
 				<img alt="Boda" src="/img/boda.png">

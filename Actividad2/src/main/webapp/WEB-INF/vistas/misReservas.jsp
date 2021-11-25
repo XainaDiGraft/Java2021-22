@@ -62,7 +62,7 @@
 				    <td>${ele.idReserva}</td>
 				    <td>${ele.evento.nombre}</td>
 				    <td>${ele.evento.tipo.nombre}</td>
-				    <td>${ele.evento.fechaInicio}</td>
+				    <td><fmt:formatDate pattern = "dd-MM-yyyy" value = "${ele.evento.fechaInicio}" /></td>
 				    <td>${ele.evento.estado}</td>
 				    <td>${ele.evento.duracion}</td>
 				    <td>${ele.precioVenta}</td>
